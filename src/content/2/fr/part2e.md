@@ -201,7 +201,7 @@ Le résultat ressemble à ceci :
 ![](../../images/2/26e.png)
 
 
-Le code de l'état actuel de notre application se trouve sur la branche <i>part2-7</i> sur [GitHub](https://github.com/fullstack-hy2020/part2-notes/tree/part2-sept).
+Le code de l'état actuel de notre application se trouve sur la branche <i>part2-7</i> sur [GitHub](https://github.com/fullstack-hy2020/part2-notes/tree/part2-7).
 
 ### Styles en ligne
 
@@ -531,7 +531,7 @@ const App = () => {
 
 Le hook useEffect prend désormais  _[currency]_ comme second paramètre. La fonction d’effet s’exécute donc après le premier rendu et <i>à chaque fois</i> que la valeur de ce second paramètre  _[currency]_ change. Autrement dit, lorsque l’état _currency_ reçoit une nouvelle valeur, le contenu du tableau est mis à jour et la fonction d’effet est relancée.
 
-Il est normal de choisir _null_ comme valeur initiae pour la variable _currency_, puisque _currency_ ne stocke qu'un seul élément. la valeur _null_ indique qu’il n’y a encore rien dans l’état, et il est très simple, à l’aide d’un if, de vérifier si la variable a reçu une valeur. L’effet comporte donc la condition suivante :
+Il est normal de choisir _null_ comme valeur initiale pour la variable _currency_, puisque _currency_ ne stocke qu'un seul élément. la valeur _null_ indique qu’il n’y a encore rien dans l’état, et il est très simple, à l’aide d’un if, de vérifier si la variable a reçu une valeur. L’effet comporte donc la condition suivante :
 
 ```js
 if (currency) { 
