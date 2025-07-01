@@ -208,7 +208,7 @@ L'application peut maintenant être utilisée depuis l'adresse <i>backend</i> <h
 
 ![](../../images/3/28e.png)
 
-Notre application fonctionne maintenant exactement comme l'application d'exemple [single-page app](/fr/part0/fundamentals_of_web_apps#single-page-app) que nous avons étudiée dans la partie 0. 
+Notre application fonctionne maintenant exactement comme l'application d'exemple [single-page app](/fr/part0/introduction_aux_applications_web#application-a-page-unique) que nous avons étudiée dans la partie 0. 
 
 Lorsque nous utilisons un navigateur pour aller à l'adresse <http://localhost:3001>, le serveur renvoie le fichier <i>index.html</i> à partir du <i>build</i> du dépôt. Le contenu résumé de ce fichier est le suivant : 
 
@@ -320,11 +320,11 @@ Après un redémarrage, l'environnement de développement React fonctionnera com
 
 Maintenant, le frontend est aussi bien, travaillant avec le serveur à la fois en mode développement et en mode production. 
 
-Un aspect négatif de notre approche est la complexité du déploiement du frontend. Le déploiement d'une nouvelle version nécessite de générer un nouveau build de production du frontend et de le copier dans le dépôt du backend. Cela rend la création d'un [pipeline de déploiement] automatisé (https://martinfowler.com/bliki/DeploymentPipeline.html) plus difficile. Un pipeline de déploiement est un moyen automatisé et contrôlé de faire passer le code de l'ordinateur du développeur à l'environnement de production en passant par différents tests et contrôles de qualité. La construction d'un pipeline de déploiement est le sujet de la [partie 11](https://fullstackopen.com/en/part11) de ce cours.
+Un aspect négatif de notre approche est la complexité du déploiement du frontend. Le déploiement d'une nouvelle version nécessite de générer un nouveau build de production du frontend et de le copier dans le dépôt du backend. Cela rend la création d'un [pipeline de déploiement](https://martinfowler.com/bliki/DeploymentPipeline.html) automatisé  plus difficile. Un pipeline de déploiement est un moyen automatisé et contrôlé de faire passer le code de l'ordinateur du développeur à l'environnement de production en passant par différents tests et contrôles de qualité. La construction d'un pipeline de déploiement est le sujet de la [partie 11](https://fullstackopen.com/en/part11) de ce cours.
 
 Il existe de multiples façons d'y parvenir (par exemple en plaçant le code backend et frontend [dans le même dépôt](https://github.com/mars/heroku-cra-node) ) mais nous ne nous y attarderons pas maintenant. 
 
-Dans certaines situations, il peut être judicieux de déployer le code frontal comme une application à part entière. Avec les applications créées avec create-react-app, c'est [simple] (https://github.com/mars/create-react-app-buildpack).
+Dans certaines situations, il peut être judicieux de déployer le code frontal comme une application à part entière. Avec les applications créées avec create-react-app, c'est [simple](https://github.com/mars/create-react-app-buildpack).
 
 Le code actuel du backend peut être trouvé sur [Github](https://github.com/fullstack-hy2020/part3-notes-backend/tree/part3-3), dans la branche <i>part3-3</i>. Les modifications du code du frontend se trouvent dans la branche <i>part3-1</i> du [dépôt du frontend](https://github.com/fullstack-hy2020/part2-notes/tree/part3-1).
 
