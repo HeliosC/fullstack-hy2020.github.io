@@ -473,7 +473,7 @@ noteSchema.set('toJSON', {
 module.exports = mongoose.model('Note', noteSchema) // highlight-line
 ```
 
-La définition des [modules] de Node (https://nodejs.org/docs/latest-v8.x/api/modules.html) diffère légèrement de la manière de définir les [modules ES6](/fr/part2/rendering_a_collection_modules#refactoring-modules) dans la partie 2.
+La définition des [modules de Node](https://nodejs.org/docs/latest-v8.x/api/modules.html) diffère légèrement de la manière de définir les [modules ES6](/fr/part2/rendering_a_collection_modules#refactoring-modules) dans la partie 2.
 
 L'interface publique du module est définie en attribuant une valeur à la variable _module.exports_. Nous allons définir la valeur comme étant le modèle <i>Note</i>. Les autres choses définies à l'intérieur du module, comme les variables _mongoose_ et _url_ ne seront pas accessibles ou visibles pour les utilisateurs du module.
 
@@ -630,7 +630,7 @@ Les exercices suivants sont assez simples, mais si votre frontend cesse de fonct
 
 #### 3.13 : Base de données du répertoire téléphonique, étape 1
 
-Changez la récupération de toutes les entrées du répertoire téléphonique pour que les données soient <i>retirées de la base de données</i>.
+Changez la récupération de toutes les entrées du répertoire téléphonique pour que les données soient <i>extraites de la base de données</i>.
 
 Vérifiez que le frontend fonctionne après que les changements ont été faits.
 
@@ -754,7 +754,7 @@ app.get('/api/notes/:id', (request, response, next) => { // highlight-line
 })
 ```
 
-L'erreur qui est transmise en amont est donnée à la fonction <em>next</em> en tant que paramètre. Si <em>next</em> était appelée sans paramètre, alors l'exécution passerait simplement à la route ou au middleware suivant. Si la fonction <em>next</em> est appelée avec un paramètre, alors l'exécution se poursuivra jusqu'au <i>milieu de traitement des erreurs</i>.
+L'erreur qui est transmise en amont est donnée à la fonction <em>next</em> en tant que paramètre. Si <em>next</em> était appelée sans paramètre, alors l'exécution passerait simplement à la route ou au middleware suivant. Si la fonction <em>next</em> est appelée avec un paramètre, alors l'exécution se poursuivra jusqu'au <i>middleware de traitement des erreurs</i>.
 
 Les [error handlers](https://expressjs.com/en/guide/error-handling.html) d'express sont des middlewares qui sont définis avec une fonction qui accepte <i>quatre paramètres</i>. Notre gestionnaire d'erreur ressemble à ceci :
 
